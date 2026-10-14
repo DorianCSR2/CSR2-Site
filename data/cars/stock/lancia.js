@@ -1,0 +1,1 @@
+CSR.put("cars/stock/lancia",{"Lancia_DeltaHFIntegraleEvo2_1994":[{"c":"GialloGinestra","i":"img/758cb348d78c70256ba7.webp","n":"Lancia Delta HF Integrale Evo 2 (GialloGinestra).txt","u":"img/cbc2a11e838842e44e4cf.webp"}]});

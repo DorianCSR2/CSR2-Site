@@ -1,0 +1,1 @@
+CSR.put("cars/max/mitsubishi",{"Mitsubishi_LancerEVOXTNR_2015":[{"c":"RallyRed","i":"img/ba3a3f8eca7135f86ac6.webp","n":"Mitsubishi Lancer Evolution Final Edition (TNR) (RallyRed).txt","p":[32,46,30]}]});

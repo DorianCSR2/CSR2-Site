@@ -1,0 +1,1 @@
+CSR.put("cars/stock/detomaso",{"DeTomaso_P900_2022":[{"c":"PurpleCarbon","i":"img/1bab0bed79804f601c5f.webp","n":"De Tomaso P900 Concept (PurpleCarbon).txt","u":"img/da26de7892e50510e40af.webp"}],"DeTomaso_PanteraGT5S_1984":[{"c":"Black","i":"img/f44f8f2721d205db0881.webp","n":"De Tomaso Pantera GT5-S (Black).txt","u":"img/bfdf5210b9314db31aaaf.webp"}]});

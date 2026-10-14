@@ -1,0 +1,1 @@
+CSR.put("cars/max/plymouth",{"Plymouth_HemiCudaClassic_1971":[{"c":"In-violet","i":"img/a6190f9ee6cde3ef12b8.webp","n":"Plymouth HEMI Cuda (In-violet).txt","p":[32,39,27]}],"Plymouth_SuperbirdLPClassic_1970":[{"c":"PettyBlue","i":"img/7f52560f46bd920a744a.webp","n":"Plymouth Superbird (PettyBlue).txt","p":[39,57,54]}]});

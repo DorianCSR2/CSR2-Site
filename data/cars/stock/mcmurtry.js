@@ -1,0 +1,1 @@
+CSR.put("cars/stock/mcmurtry",{"McMurtry_Speirling_2022":[{"c":"Graphite","i":"img/2d231736ee61fe1db434.webp","n":"McMurtry Speirling Goodwood Edition (Graphite).txt","u":"img/0bac6222f7060e12f2f6f.webp"}]});

@@ -1,0 +1,1 @@
+CSR.put("cars/max/mclaren",{"McLaren_F1_1993":[{"c":"Orange","i":"img/eeb73d93af4832158537.webp","n":"McLaren F1 (Orange).txt","p":[37,60,53]}],"McLaren_720STNR_2017":[{"c":"StormGrey","i":"img/12c2ac4a65b184ac61fc.webp","n":"McLaren 720S (StormGrey).txt","p":[39,57,54]}]});

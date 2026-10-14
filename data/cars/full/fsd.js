@@ -1,0 +1,1 @@
+CSR.put("cars/full/fsd",{"FSD_ConceptCar_2027":[{"c":"AzzurroRiverbreeze","i":"img/1a322512c93f6dcec2f4.webp","n":"FSD FrankNStein (AzzurroRiverbreeze).txt","u":"img/9a4959f57e456a1d2bb6f.webp","p":[36,50,49]}]});

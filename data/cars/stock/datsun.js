@@ -1,0 +1,1 @@
+CSR.put("cars/stock/datsun",{"Datsun_240ZLPClassic_1972":[{"c":"Orange","i":"img/af6014d37751276fab43.webp","n":"Datsun 240Z (Orange).txt","u":"img/c227aaa008877ae411aff.webp","r":0},{"c":"Orange","i":"img/9f3f3c52af69bbf0c507.webp","n":"Datsun 240Z (Orange).txt","u":"img/c227aaa008877ae411aff.webp","r":1}]});

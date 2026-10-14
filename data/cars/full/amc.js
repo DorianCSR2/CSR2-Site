@@ -1,0 +1,1 @@
+CSR.put("cars/full/amc",{"AMC_RingbrothersJavelinDefiant_1972":[{"c":"JalopGold","i":"img/742654f57fa63136adc5.webp","n":"AMC Ringbrothers Prestone Javelin AMX 'Defiant!' (JalopGold).txt","u":"img/714c5ae3c83c8e18bfaaf.webp","p":[36,50,49]}]});

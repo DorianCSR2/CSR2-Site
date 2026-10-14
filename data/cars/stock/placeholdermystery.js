@@ -1,0 +1,1 @@
+CSR.put("cars/stock/placeholdermystery",{"Placeholder_CoveredCar_1234":[{"c":"SalzburgRacingDesign","i":"img/15cfb04913091bf2bb73.webp","n":"Placeholder Covered Car (SalzburgRacingDesign).txt","u":"img/a72119c4cd2deaf21dcdf.webp"}]});

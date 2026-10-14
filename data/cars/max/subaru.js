@@ -1,0 +1,1 @@
+CSR.put("cars/max/subaru",{"Subaru_BRZtSTNR_2020":[{"c":"CeramicWhite","i":"img/5666ff06206f45cffca8.webp","n":"Subaru BRZ tS 2020 (TNR) (CeramicWhite).txt","p":[39,57,54]}],"Subaru_WRXSTITNR_2018":[{"c":"WRBluePearl","i":"img/56de7cf50cf9f8fb60ea.webp","n":"Subaru WRX STI (TNR) (WRBluePearl).txt","p":[32,46,30]}]});

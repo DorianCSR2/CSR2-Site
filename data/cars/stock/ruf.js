@@ -1,1 +1,1 @@
-CSR.put("cars/stock/ruf",{"RUF_CTR3EVO_2023":[{"c":"LagunaSecaBlue","i":"img/4aceddce9857f8605c61.webp","u":"img/a26e288464b4918d49a1f.webp"}]});
+CSR.put("cars/stock/ruf",{"RUF_CTR3EVO_2023":[{"c":"LagunaSecaBlue","i":"img/4aceddce9857f8605c61.webp","n":"RUF CTR 3 Evo (LagunaSecaBlue).txt","u":"img/a26e288464b4918d49a1f.webp"}]});

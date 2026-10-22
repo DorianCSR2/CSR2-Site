@@ -1,1 +1,1 @@
-CSR.put("cars/stock/raesr",{"RAESR_TachyonSpeed_2024":[{"c":"HyperRed","i":"img/c3b846aa1c2b329365d1.webp","n":"RAESR Tachyon Speed (HyperRed).txt","u":"img/6146c9d20d5938ad939ef.webp"}]});
+CSR.put("cars/stock/raesr",{"RAESR_TachyonSpeed_2024":[{"c":"HyperRed","i":"img/c3b846aa1c2b329365d1.webp","n":"RAESR Tachyon Speed (HyperRed).txt","g":"1.Cars/1.Stock/2.Purple Star/RAESR/Tachyon Speed/RAESR Tachyon Speed (HyperRed).txt","u":"img/6146c9d20d5938ad939ef.webp"}]});

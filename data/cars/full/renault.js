@@ -1,1 +1,1 @@
-CSR.put("cars/full/renault",{"Renault_ClioV6Phase2_2005":[{"c":"LiquidYellow","i":"img/445b81db76f34aa5b73d.webp","n":"Renault Clio V6 (LiquidYellow).txt","u":"img/07e651a170be6870b5c3f.webp","p":[36,50,49]}]});
+CSR.put("cars/full/renault",{"Renault_ClioV6Phase2_2005":[{"c":"LiquidYellow","i":"img/445b81db76f34aa5b73d.webp","n":"Renault Clio V6 (LiquidYellow).txt","g":"1.Cars/2.Maxed/2.Purple Star/Renault/Clio V6/Renault Clio V6 (LiquidYellow).txt","u":"img/07e651a170be6870b5c3f.webp","p":[36,50,49]}]});

@@ -1,1 +1,1 @@
-CSR.put("cars/max/bugatti",{"Bugatti_EB110SSClassic_1992":[{"c":"BugattiBlue","i":"img/2808dd098570d0cfe326.webp","n":"Bugatti EB110 Super Sport (BugattiBlue).txt","p":[37,46,52]}]});
+CSR.put("cars/max/bugatti",{"Bugatti_EB110SSClassic_1992":[{"c":"BugattiBlue","i":"img/2808dd098570d0cfe326.webp","n":"Bugatti EB110 Super Sport (BugattiBlue).txt","g":"1.Cars/3.Elite Max/3.Legends/Bugatti/Bugatti EB110 Super Sport/Bugatti EB110 Super Sport (BugattiBlue).txt","p":[37,46,52]}]});

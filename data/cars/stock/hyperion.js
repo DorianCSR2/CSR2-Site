@@ -1,1 +1,1 @@
-CSR.put("cars/stock/hyperion",{"Hyperion_XP1_2023":[{"c":"CosmicSilver","i":"img/c03a913dbd6e939be9c2.webp","n":"Hyperion X-16 Prometheus (CosmicSilver).txt","u":"img/ffdaa8e48791e5b8e512f.webp"}]});
+CSR.put("cars/stock/hyperion",{"Hyperion_XP1_2023":[{"c":"CosmicSilver","i":"img/c03a913dbd6e939be9c2.webp","n":"Hyperion X-16 Prometheus (CosmicSilver).txt","g":"1.Cars/1.Stock/2.Purple Star/Hyperion/X-16 Prometheus/Hyperion X-16 Prometheus (CosmicSilver).txt","u":"img/ffdaa8e48791e5b8e512f.webp"}]});

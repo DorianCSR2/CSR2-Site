@@ -232,6 +232,8 @@ main{container-type:inline-size}
       <div class="t" id="pt">—</div>
       <button class="btn sm" id="pcopy">Copy</button>
       <button class="btn sm" id="pdl">Download</button>
+      <a class="btn sm" id="pgh" target="_blank" rel="noopener" style="display:none"></a>
+      <a class="btn sm" id="pdir" target="_blank" rel="noopener" style="display:none"></a>
       <button class="btn sm" id="pclose" title="Close">✕</button>
       <div class="sub" id="psub"></div>
     </div>
@@ -287,6 +289,8 @@ const I18N = {
  search_ph:['Search a car (name or crdb)…','Chercher une voiture (nom ou crdb)…','Auto suchen (Name oder crdb)…','Buscar un coche (nombre o crdb)…','Procurar um carro (nome ou crdb)…'],
  lang_title:['Language','Langue','Sprache','Idioma','Idioma'],
  no_car_found:['No car found','Aucune voiture trouvée','Kein Auto gefunden','Ningún coche encontrado','Nenhum carro encontrado'],
+ open_gh:['Open on GitHub','Ouvrir sur GitHub','Auf GitHub öffnen','Abrir en GitHub','Abrir no GitHub'],
+ open_dir:['Folder','Dossier','Ordner','Carpeta','Pasta'],
  copy:['Copy','Copier','Kopieren','Copiar','Copiar'],
  download:['Download','Télécharger','Herunterladen','Descargar','Baixar'],
  close:['Close','Fermer','Schließen','Cerrar','Fechar'],
@@ -336,6 +340,8 @@ const I18N = {
  fus_max:['Fusions · Elite Max','Fusions · Elite Max','Fusionen · Elite Max','Fusiones · Elite Max','Fusões · Elite Max'],
  tok_elite:['Elite tokens','Jetons Elite','Elite-Token','Fichas Elite','Fichas Elite'],
  tok_legends:['Legends tokens','Jetons Legends','Legends-Token','Fichas Legends','Fichas Legends'],
+ hm_full:['Hyper Mods: parts to go full','Hyper Mods : pièces pour être full','Hyper Mods: Teile bis Full','Hyper Mods: piezas para full','Hyper Mods: peças para o full'],
+ hm_tokens:['Mechanic tokens','Jetons de mécanicien','Mechaniker-Token','Fichas de mecánico','Fichas de mecânico'],
  all_colours:['Show all colours ({0})','Afficher toutes les couleurs ({0})','Alle Farben zeigen ({0})','Ver todos los colores ({0})','Ver todas as cores ({0})'],
  fus_stock:['Fusion parts to reach Full','Pièces de fusion pour passer Full','Fusionsteile bis Full','Piezas de fusión hasta Full','Peças de fusão até o Full'],
  fus_slots:['Fusion parts · {0}','Pièces de fusion · {0}','Fusionsteile · {0}','Piezas de fusión · {0}','Peças de fusão · {0}'],
@@ -451,8 +457,20 @@ function sortCars(list){
 
 /* ------------------------------------------------------------------ side panel */
 let PANEL = {text:'', file:'output.txt'};
-function showPanel(title, text, file, sub='', note=''){
+/* link to the file of the friend's GitHub repository (request of 2026-10-22, as on the CSR2-DataBase site) */
+const REPO_URL = 'https://github.com/Nitro4CSR/CSR2-DataBase', REPO_BRANCH = 'restructuration';
+function repoLinks(path){
+  const gh = $('#pgh'), dir = $('#pdir');
+  if (!path){ gh.style.display = dir.style.display = 'none'; return; }
+  const enc = p => p.split('/').map(encodeURIComponent).join('/');
+  gh.href = `${REPO_URL}/blob/${REPO_BRANCH}/${enc(path)}`;
+  dir.href = `${REPO_URL}/tree/${REPO_BRANCH}/${enc(path.split('/').slice(0, -1).join('/'))}`;
+  gh.textContent = T('open_gh'); dir.textContent = T('open_dir');
+  gh.title = dir.title = path; gh.style.display = dir.style.display = '';
+}
+function showPanel(title, text, file, sub='', note='', path=''){
   PANEL = {text, file};
+  repoLinks(path);
   $('#pt').textContent = title; $('#psub').textContent = sub || T('lines', num(text.split('\n').length), (text.length/1024).toFixed(1));
   $('#pre').textContent = text;
   $('#pnote').style.display = note ? '' : 'none'; $('#pnote').textContent = note;
@@ -609,6 +627,10 @@ function tokenCards(c){                        // Legends first (the car is rest
   let h = '';
   if (c.tl) h += `<div class="card"><div class="k">${T('tok_legends')}</div><div class="v"><span class="ico">${icon('tok_legends', T('tok_legends'))}${num(c.tl)}</span></div></div>`;
   if (c.te) h += `<div class="card"><div class="k">${T('tok_elite')}</div><div class="v toks">${['green','blue','red','gold'].map((k,i)=>c.te[i]?`<span class="ico" title="${esc(T('t_'+k))}">${icon('tok_'+k, T('t_'+k))}${num(c.te[i])}</span>`:'').join('')}</div></div>`;
+  if (c.hm){                                    // Hyper Mods: every mod crafted then levelled up to its max level
+    const lab = k=>k.replace(/_/g,' ').replace(/^./,x=>x.toUpperCase());
+    h += `<div class="card"><div class="k">${T('hm_full')}</div><div class="v toks">${(c.hm.m||[]).map(([k,n])=>`<span class="ico" title="${esc(lab(k))}">${icon('hm_'+k, lab(k))}${num(n)}</span>`).join('')}${c.hm.t?`<span class="ico" title="${esc(T('hm_tokens'))}">${icon('hm_token', T('hm_tokens'))}${num(c.hm.t)}</span>`:''}${c.hm.g?`<span class="ico" title="Gold">🪙${num(c.hm.g)}</span>`:''}</div></div>`;
+  }
   return h ? `<div class="tokcol">${h}</div>` : '';
 }
 // fusion card: Stock = parts to reach Full + in-game capture; Full / Max = parts of that version, no image
@@ -694,7 +716,7 @@ async function pageCar(mode, brand, crdb){
     }
     if (my !== token) return;                  // another colour was chosen meanwhile
     const st = f.r===undefined ? '' : ' · ' + T(f.r ? 'leg_res' : 'leg_unres');
-    showPanel(`${nameOf(c)} · ${MODE[mode]}${st} · ${f.c}`, f.t, f.n, '');
+    showPanel(`${nameOf(c)} · ${MODE[mode]}${st} · ${f.c}`, f.t, f.n, '', '', f.g||'');
   };
   $('#allcol').onclick = ()=>{ $('#shots').classList.remove('picked'); $('#allcol').style.display='none'; };
   $('#shots').onclick = e=>{

@@ -1,1 +1,1 @@
-CSR.put("cars/max/mitsubishi",{"Mitsubishi_LancerEVOXTNR_2015":[{"c":"RallyRed","i":"img/ba3a3f8eca7135f86ac6.webp","n":"Mitsubishi Lancer Evolution Final Edition (TNR) (RallyRed).txt","p":[32,46,30]}]});
+CSR.put("cars/max/mitsubishi",{"Mitsubishi_LancerEVOXTNR_2015":[{"c":"RallyRed","i":"img/ba3a3f8eca7135f86ac6.webp","n":"Mitsubishi Lancer Evolution Final Edition (TNR) (RallyRed).txt","g":"1.Cars/3.Elite Max/4.TNR/Mitsubishi/Lancer Evolution Final Edition (TNR)/Mitsubishi Lancer Evolution Final Edition (TNR) (RallyRed).txt","p":[32,46,30]}]});

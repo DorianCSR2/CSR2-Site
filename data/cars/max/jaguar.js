@@ -1,1 +1,1 @@
-CSR.put("cars/max/jaguar",{"Jaguar_XJ220Classic_1993":[{"c":"SilverstoneGreen","i":"img/7ed1504d0c6fcd159d68.webp","n":"Jaguar XJ220 (SilverstoneGreen).txt","p":[37,46,52]}]});
+CSR.put("cars/max/jaguar",{"Jaguar_XJ220Classic_1993":[{"c":"SilverstoneGreen","i":"img/7ed1504d0c6fcd159d68.webp","n":"Jaguar XJ220 (SilverstoneGreen).txt","g":"1.Cars/3.Elite Max/3.Legends/Jaguar/Jaguar XJ220/Jaguar XJ220 (SilverstoneGreen).txt","p":[37,46,52]}]});

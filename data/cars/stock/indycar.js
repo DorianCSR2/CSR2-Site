@@ -1,1 +1,1 @@
-CSR.put("cars/stock/indycar",{"Indy_Car_2021":[{"c":"RacingBlue","i":"img/fb5a2e0fadac4956a100.webp","n":"IndyCar (RacingBlue).txt","u":"img/bc0a262a777a50776f41f.webp"}]});
+CSR.put("cars/stock/indycar",{"Indy_Car_2021":[{"c":"RacingBlue","i":"img/fb5a2e0fadac4956a100.webp","n":"IndyCar (RacingBlue).txt","g":"1.Cars/1.Stock/2.Purple Star/IndyCar/IndyCar/IndyCar (RacingBlue).txt","u":"img/bc0a262a777a50776f41f.webp"}]});

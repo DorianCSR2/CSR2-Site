@@ -1,1 +1,1 @@
-CSR.put("cars/full/mcmurtry",{"McMurtry_Speirling_2022":[{"c":"Graphite","i":"img/2d231736ee61fe1db434.webp","n":"McMurtry Speirling Goodwood Edition (Graphite).txt","u":"img/0bac6222f7060e12f2f6f.webp","p":[36,50,49]}]});
+CSR.put("cars/full/mcmurtry",{"McMurtry_Speirling_2022":[{"c":"Graphite","i":"img/2d231736ee61fe1db434.webp","n":"McMurtry Speirling Goodwood Edition (Graphite).txt","g":"1.Cars/2.Maxed/2.Purple Star/McMurtry/Speirling Goodwood Edition/McMurtry Speirling Goodwood Edition (Graphite).txt","u":"img/0bac6222f7060e12f2f6f.webp","p":[36,50,49]}]});
